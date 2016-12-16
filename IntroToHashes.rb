@@ -18,9 +18,9 @@ now make your own menu below, please use the diner_menu variable name and have a
 
 =end
 
-diner_menu=Hash.new
-diner_menu["breakfast"]=["bagel", "toast"]
-diner_menu["drinks"]= ["water","coffee","orange juice"]
+diner_menu=Hash.new #starts a new hash
+diner_menu["breakfast"]=["bagel", "toast"]#creates and populates array called breakfast inside of the hash
+diner_menu["drinks"]= ["water","coffee","orange juice"]#creates and populates an array called drinks inside the hash
 
 #run all your code and describe what this loop does.
 diner_menu.each do |category,items|
@@ -29,3 +29,4 @@ diner_menu.each do |category,items|
       items.each {|item| puts item}
       end
     end
+#the for loop prints diner items by catagory under each label
